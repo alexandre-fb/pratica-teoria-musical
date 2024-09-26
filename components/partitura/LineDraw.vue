@@ -1,0 +1,22 @@
+<template>
+  <svg viewBox="0 0 800 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M2.53 1.00363C135.06 1.11363 666.3 0.823633 799.08 1.20363M1 3.28363C133.36 3.60363 665.64 2.50363 798.66 2.21363"
+      :stroke="color"
+      stroke-linecap="round"
+    />
+  </svg>
+</template>
+
+<script setup lang="ts">
+import { defineProps, withDefaults } from "vue";
+
+const props = withDefaults(
+  defineProps<{
+    color?: string;
+  }>(),
+  {
+    color: "#1971C2",
+  }
+);
+</script>
